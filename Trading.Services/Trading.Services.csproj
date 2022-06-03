@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Implementations\BaseService.cs" />
+    <Compile Remove="Implementations\DepartmentService.cs" />
+    <Compile Remove="Implementations\EmailService.cs" />
+    <Compile Remove="Implementations\RoleGroupService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dto\" />
+    <Folder Include="ValidationExtension\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trading.Repository\Trading.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
