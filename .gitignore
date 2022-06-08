@@ -1,0 +1,12 @@
+Trading.Test/obj/project.nuget.cache
+Trading.Repository/bin/
+Trading.Test/obj/Debug/netcoreapp3.1/Trading.Test.pdb
+Trading.Test/obj/Debug/netcoreapp3.1/Trading.Test.genruntimeconfig.cache
+Trading.Repository/obj/
+api-authen/Trading.Authen.Api.csproj.user
+Trading.Services/bin/Debug/netcoreapp3.1/Trading.Repository.dll
+Trading.Services/bin/Debug/netcoreapp3.1/Trading.Repository.pdb
+Trading.Services/bin/Debug/netcoreapp3.1/
+Trading.Services/obj/
+Trading.Test/bin/
+Trading.Test/obj/
