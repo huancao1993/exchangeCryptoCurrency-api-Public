@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Trading.Repository.Migrations
+namespace Trading.Authen.Repository.Migrations
 {
     public partial class updateDatabase : Migration
     {

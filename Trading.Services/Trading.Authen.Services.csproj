@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Trading.Repository\Trading.Repository.csproj" />
+    <ProjectReference Include="..\Trading.Repository\Trading.Authen.Repository.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Trading.Repository.Entity;
-using Trading.Repository.Interfaces;
-using Trading.Repository.Repositories.Generics;
+using Trading.Authen.Repository.Entity;
+using Trading.Authen.Repository.Interfaces;
+using Trading.Authen.Repository.Repositories.Generics;
 
-namespace Trading.Repository.Repositories
+namespace Trading.Authen.Repository.Repositories
 {
     public class UsersRepository : Repository<Users>, IUsersRepository
     {

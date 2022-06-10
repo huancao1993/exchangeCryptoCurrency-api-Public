@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Threading.Tasks;
-using Trading.Repository.Entity;
-using Trading.Repository.Interfaces;
-using Trading.Repository.Repositories;
+using Trading.Authen.Repository.Entity;
+using Trading.Authen.Repository.Interfaces;
+using Trading.Authen.Repository.Repositories;
 
-namespace Trading.Repository.UnitOfWork
+namespace Trading.Authen.Repository.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {

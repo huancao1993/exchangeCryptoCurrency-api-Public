@@ -7,7 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Trading.Authen.Api.Helpers;
-using Trading.Services.Helpers;
+using Trading.Authen.Services.Helpers;
 
 namespace Trading.Authen.Api.Commons
 {

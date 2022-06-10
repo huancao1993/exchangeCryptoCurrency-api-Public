@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace Trading.Test
+namespace Trading.Authen.Test
 {
     public class Tests
     {

@@ -31,7 +31,7 @@
     <Folder Include="IntegrationEvents\Handlers\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Trading.Services\Trading.Services.csproj" />
+    <ProjectReference Include="..\Trading.Services\Trading.Authen.Services.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="EventBusiness">

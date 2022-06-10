@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Trading.Repository.Entity
+namespace Trading.Authen.Repository.Entity
 {
     public partial class Users : BaseTable
     {

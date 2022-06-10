@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Trading.Services.Dto.Users
+namespace Trading.Authen.Services.Dto.Users
 {
     public class LoginOutputModel
     {

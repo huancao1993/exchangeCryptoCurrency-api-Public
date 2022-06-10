@@ -24,10 +24,10 @@ using System.IO;
 using System.Reflection;
 using EventBusiness.Interfaces;
 using EventBusiness.Services;
-using Trading.Repository.UnitOfWork;
-using Trading.Repository.Repositories.Generics;
-using Trading.Services.Implementations;
-using Trading.Repository.Entity;
+using Trading.Authen.Repository.UnitOfWork;
+using Trading.Authen.Repository.Repositories.Generics;
+using Trading.Authen.Services.Implementations;
+using Trading.Authen.Repository.Entity;
 
 namespace Trading.Authen.Api
 {

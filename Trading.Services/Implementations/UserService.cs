@@ -5,13 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Trading.Authen.Api.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using Trading.Repository.UnitOfWork;
-using Trading.Repository.Entity;
-using Trading.Services.Helpers;
-using Trading.Services.Dto.Users;
+using Trading.Authen.Repository.UnitOfWork;
+using Trading.Authen.Repository.Entity;
+using Trading.Authen.Services.Helpers;
+using Trading.Authen.Services.Dto.Users;
 using AutoMapper;
 
-namespace Trading.Services.Implementations
+namespace Trading.Authen.Services.Implementations
 {
     public class UserService : IUserService
     {

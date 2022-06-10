@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace Trading.Services.Helpers
+namespace Trading.Authen.Services.Helpers
 {
     public class AuthenException : Exception
     {

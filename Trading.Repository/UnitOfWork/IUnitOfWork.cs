@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Threading.Tasks;
-using Trading.Repository.Interfaces;
+using Trading.Authen.Repository.Interfaces;
 
-namespace Trading.Repository.UnitOfWork
+namespace Trading.Authen.Repository.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Trading.Services.Dto
+namespace Trading.Authen.Services.Dto
 {
     public class SearchBase: ISearchBase
     {

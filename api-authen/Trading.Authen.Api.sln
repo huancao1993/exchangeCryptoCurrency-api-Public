@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trading.Authen.Api", "Trading.Authen.Api.csproj", "{7735EF10-474F-46D7-B0A4-666E4589EFFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trading.Repository", "..\Trading.Repository\Trading.Repository.csproj", "{570CDFF6-3CF0-44FE-A674-4F15A6AA83B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trading.Authen.Repository", "..\Trading.Repository\Trading.Authen.Repository.csproj", "{570CDFF6-3CF0-44FE-A674-4F15A6AA83B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trading.Services", "..\Trading.Services\Trading.Services.csproj", "{890B9724-0459-45D6-BF77-1F89B0C3A2C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trading.Authen.Services", "..\Trading.Services\Trading.Authen.Services.csproj", "{890B9724-0459-45D6-BF77-1F89B0C3A2C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trading.Test", "..\Trading.Test\Trading.Test.csproj", "{C68BF86D-061C-4D9F-AE50-8EE1B7EFC5F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trading.Authen.Test", "..\Trading.Test\Trading.Authen.Test.csproj", "{C68BF86D-061C-4D9F-AE50-8EE1B7EFC5F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

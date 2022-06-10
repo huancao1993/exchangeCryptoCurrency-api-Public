@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Trading.Repository.Repositories.Generics
+namespace Trading.Authen.Repository.Repositories.Generics
 {
     public interface IRepository<TEntity> where TEntity : class
     {

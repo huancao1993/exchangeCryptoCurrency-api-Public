@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Trading.Repository.Entity;
-using Trading.Services.Dto.Users;
+using Trading.Authen.Repository.Entity;
+using Trading.Authen.Services.Dto.Users;
 
 namespace Trading.Authen.Api.Interfaces
 {

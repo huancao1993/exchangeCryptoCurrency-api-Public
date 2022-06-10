@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using Trading.Services.Constants;
+using Trading.Authen.Services.Constants;
 
-namespace Trading.Services.Dto.Users
+namespace Trading.Authen.Services.Dto.Users
 {
     public class LoginModel
     {

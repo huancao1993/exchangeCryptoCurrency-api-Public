@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
 
-namespace Trading.Repository.Entity
+namespace Trading.Authen.Repository.Entity
 {
     public partial class TradingDbAuthenContext : DbContext
     {

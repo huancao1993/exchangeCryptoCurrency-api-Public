@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Trading.Services.Constants
+namespace Trading.Authen.Services.Constants
 {
     public static class RegexValidate
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System;
-namespace Trading.Services.Dto.Users
+namespace Trading.Authen.Services.Dto.Users
 {
   public class UpdateUsersModel
     {

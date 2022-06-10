@@ -1,8 +1,8 @@
 using AutoMapper;
 using System.Linq;
 using EventBusiness.IntegrationEvents.Events;
-using Trading.Services.Dto.Users;
-using Trading.Repository.Entity;
+using Trading.Authen.Services.Dto.Users;
+using Trading.Authen.Repository.Entity;
 
 namespace Trading.Authen.Api.Helpers
 {

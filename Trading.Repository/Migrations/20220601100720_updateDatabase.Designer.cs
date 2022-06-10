@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Trading.Repository.Entity;
+using Trading.Authen.Repository.Entity;
 
-namespace Trading.Repository.Migrations
+namespace Trading.Authen.Repository.Migrations
 {
     [DbContext(typeof(TradingDbAuthenContext))]
     [Migration("20220601100720_updateDatabase")]
@@ -21,7 +21,7 @@ namespace Trading.Repository.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Trading.Repository.Entity.Permissions", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.Permissions", b =>
                 {
                     b.Property<int>("IdPermission")
                         .ValueGeneratedOnAdd()
@@ -60,7 +60,7 @@ namespace Trading.Repository.Migrations
                     b.ToTable("Permissions");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.RoleAction", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.RoleAction", b =>
                 {
                     b.Property<int>("IdRoleAction")
                         .ValueGeneratedOnAdd()
@@ -87,7 +87,7 @@ namespace Trading.Repository.Migrations
                     b.ToTable("RoleActions");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.RoleGroup", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.RoleGroup", b =>
                 {
                     b.Property<int>("IdRoleGroup")
                         .ValueGeneratedOnAdd()
@@ -127,7 +127,7 @@ namespace Trading.Repository.Migrations
                     b.ToTable("RoleGroups");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.RoleGroupAction", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.RoleGroupAction", b =>
                 {
                     b.Property<int>("IdRoleGroupAction")
                         .ValueGeneratedOnAdd()
@@ -166,7 +166,7 @@ namespace Trading.Repository.Migrations
                     b.ToTable("RoleGroupActions");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.Roles", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.Roles", b =>
                 {
                     b.Property<int>("IdRole")
                         .ValueGeneratedOnAdd()
@@ -187,7 +187,7 @@ namespace Trading.Repository.Migrations
                     b.ToTable("Roles");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.Screen", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.Screen", b =>
                 {
                     b.Property<int>("IdScree")
                         .ValueGeneratedOnAdd()
@@ -212,7 +212,7 @@ namespace Trading.Repository.Migrations
                     b.ToTable("Screens");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.UserHasRoleGroup", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.UserHasRoleGroup", b =>
                 {
                     b.Property<int>("IdUserHasRoleGroup")
                         .ValueGeneratedOnAdd()
@@ -251,7 +251,7 @@ namespace Trading.Repository.Migrations
                     b.ToTable("UserHasRoleGroups");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.Users", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.Users", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -313,61 +313,61 @@ namespace Trading.Repository.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.Permissions", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.Permissions", b =>
                 {
-                    b.HasOne("Trading.Repository.Entity.RoleAction", "RoleAction")
+                    b.HasOne("Trading.Authen.Repository.Entity.RoleAction", "RoleAction")
                         .WithMany("Permissions")
                         .HasForeignKey("IdRoleAction")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Trading.Repository.Entity.Users", "Users")
+                    b.HasOne("Trading.Authen.Repository.Entity.Users", "Users")
                         .WithMany("Permissions")
                         .HasForeignKey("IdUser")
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.RoleAction", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.RoleAction", b =>
                 {
-                    b.HasOne("Trading.Repository.Entity.Roles", "Role")
+                    b.HasOne("Trading.Authen.Repository.Entity.Roles", "Role")
                         .WithMany("RoleActions")
                         .HasForeignKey("IdRole")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.RoleGroupAction", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.RoleGroupAction", b =>
                 {
-                    b.HasOne("Trading.Repository.Entity.RoleAction", "RoleAction")
+                    b.HasOne("Trading.Authen.Repository.Entity.RoleAction", "RoleAction")
                         .WithMany("RoleGroupActions")
                         .HasForeignKey("IdRoleAction")
                         .IsRequired();
 
-                    b.HasOne("Trading.Repository.Entity.RoleGroup", "RoleGroup")
+                    b.HasOne("Trading.Authen.Repository.Entity.RoleGroup", "RoleGroup")
                         .WithMany("RoleGroupActions")
                         .HasForeignKey("IdRoleGroup")
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.Screen", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.Screen", b =>
                 {
-                    b.HasOne("Trading.Repository.Entity.Roles", "Role")
+                    b.HasOne("Trading.Authen.Repository.Entity.Roles", "Role")
                         .WithMany("Screes")
                         .HasForeignKey("IdRole");
 
-                    b.HasOne("Trading.Repository.Entity.Screen", null)
+                    b.HasOne("Trading.Authen.Repository.Entity.Screen", null)
                         .WithMany("Screens")
                         .HasForeignKey("ParentId");
                 });
 
-            modelBuilder.Entity("Trading.Repository.Entity.UserHasRoleGroup", b =>
+            modelBuilder.Entity("Trading.Authen.Repository.Entity.UserHasRoleGroup", b =>
                 {
-                    b.HasOne("Trading.Repository.Entity.RoleGroup", "RoleGroup")
+                    b.HasOne("Trading.Authen.Repository.Entity.RoleGroup", "RoleGroup")
                         .WithMany("UserHasRoleGroups")
                         .HasForeignKey("IdRoleGroup")
                         .IsRequired();
 
-                    b.HasOne("Trading.Repository.Entity.Users", "User")
+                    b.HasOne("Trading.Authen.Repository.Entity.Users", "User")
                         .WithMany("UserHasRoleGroups")
                         .HasForeignKey("IdUser")
                         .IsRequired();

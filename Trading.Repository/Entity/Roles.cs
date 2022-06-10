@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Trading.Repository.Entity
+namespace Trading.Authen.Repository.Entity
 {
     public partial class Roles
     {

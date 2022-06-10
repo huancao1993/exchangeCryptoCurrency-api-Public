@@ -13,8 +13,8 @@ using Trading.Authen.Api.Interfaces;
 using System.Threading.Tasks;
 using Trading.Authen.Api.Base;
 using System.ComponentModel.DataAnnotations;
-using Trading.Services.Dto.Users;
-using Trading.Repository.Entity;
+using Trading.Authen.Services.Dto.Users;
+using Trading.Authen.Repository.Entity;
 
 namespace Trading.Authen.Api.Controllers
 {
