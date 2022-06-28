@@ -23,7 +23,6 @@ namespace Trading.Authen.Repository.Repositories.Generics
         IEnumerable<TEntity> UpdateRange(IEnumerable<TEntity> entities);               
         Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate, string includeProperties = null);
         TEntity GetFirst(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = null);
-       // Task<TEntity> GetFirstAsync(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = null);
 
 
     }

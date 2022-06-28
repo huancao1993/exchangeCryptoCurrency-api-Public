@@ -17,6 +17,11 @@ namespace Trading.Authen.Repository.Entity
             // _configuration = configuration;
             //_context = context;
         }
+        public TradingDbAuthenContext()
+        {
+            // _configuration = configuration;
+            //_context = context;
+        }
         //public TradingDbAuthenContext()
         //{
         //    // _configuration = configuration;
@@ -31,8 +36,8 @@ namespace Trading.Authen.Repository.Entity
                               .AddJsonFile("appsettings.json");
 
                 IConfiguration Configuration = builder.Build();
-
-                options.UseSqlServer(Configuration.GetConnectionString("TradingDbAuthen"));
+                var configString = Configuration.GetConnectionString("TradingDbAuthen");
+                options.UseSqlServer(configString);
             }
             //string con = _configuration.GetSection("ConnectionStrings").GetValue<string>("TradingDbAuthen");
             //options.UseSqlServer(con);
